@@ -1,0 +1,13 @@
+#product of even no's from m to n
+def product_of_even_numbers(m, n):
+    product = 1
+    for i in range(m, n + 1):
+        if i % 2 == 0:
+            product *= i
+        else:
+            pass
+    return product
+m = int(input("Enter the value of m: "))
+n = int(input("Enter the value of n: "))
+result = product_of_even_numbers(m, n)
+print(f"Product of even numbers from {m} to {n} is {result}")
