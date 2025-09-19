@@ -1,0 +1,8 @@
+#factorial
+m=int(input("Enter m value:"))
+n=int(input("Enter n value:"))
+for num in range(m,n+1):
+    fact=1
+    for i in range(1,num+1):
+        fact*=i
+    print(f"{num}!={fact}")
