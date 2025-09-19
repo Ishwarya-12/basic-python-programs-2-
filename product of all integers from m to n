@@ -1,0 +1,14 @@
+#product of all integers from m to n
+def product_from_m_to_n(m, n):
+    product = 1
+    start = m
+    end = n
+    if m > n:
+        start, end = n, m 
+    for i in range(start, end + 1):
+        product *= i
+    return product
+m = int(input("Enter the value of m: "))
+n = int(input("Enter the value of n: "))
+result = product_from_m_to_n(m, n)
+print(f"Product of all integers from {m} to {n} is {result}")
